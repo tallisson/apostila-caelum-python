@@ -9,12 +9,12 @@ class Conta:
     self.limite = limite
     self.historico = Historico()
 
-  def dict(self):
+  def __str__(self):
     return dict(
       numero = self.numero,
       cliente = self.cliente.toString(),
       saldo = self.saldo
-    )
+    ).__str__()
   
   def deposita(self, valor):
     if(valor < 0):

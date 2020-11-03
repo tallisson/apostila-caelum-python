@@ -4,6 +4,7 @@ from cliente import Cliente
 cliente = Cliente('Thiago', 'Ribeiro', '123456789-10')
 
 conta = Conta('123-4', cliente, 10000, 20000)
+print(conta)
 
 try:
   conta.saca(100000)
