@@ -7,4 +7,4 @@ c = Conta('123-4', cliente, 10000, 20000)
 c.saca(1000)
 
 c.extrato()
-print(c.__dict__)
+print(c.dict())

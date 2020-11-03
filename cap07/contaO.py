@@ -9,7 +9,7 @@ class Conta:
     self.limite = limite
     self.historico = Historico()
 
-  def toString(self):
+  def dict(self):
     return dict(
       numero = self.numero,
       cliente = self.cliente.toString(),
